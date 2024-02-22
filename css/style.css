@@ -806,6 +806,37 @@ img {
   filter: grayscale(0);
 }
 
+.table-wrapper {
+  overflow: hidden;
+  border-radius: var(--border-radius);
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  color: rgb(61, 61, 61);
+}
+
+td,
+th {
+  padding: 25px;
+}
+
+th {
+  background-color: rgb(240, 240, 240);
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(240, 240, 240);
+}
+
+.vacancies__title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: var(--black-color);
+}
+
 /* footer */
 .footer {
   padding-top: 50px;
