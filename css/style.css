@@ -114,6 +114,7 @@ img {
 }
 
 .btn {
+  display: block;
   min-height: 44px;
   min-width: 210px;
   border: 1px solid var(--primary-color);
@@ -126,6 +127,13 @@ img {
   background-color: var(--white-color);
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
+.btn:focus-visible {
+  outline: 1px solid var(--primary-color);
+  outline-offset: 2px;
+  border-color: var(--white-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
 .btn:hover:not(:focus-visible) {
   background-color: var(--primary-color);
   color: var(--white-color);
@@ -135,24 +143,19 @@ img {
   background-color: #074464;
   color: var(--white-color);
 }
-.btn:focus-visible {
-  border-color: var(--white-color);
-  background-color: var(--primary-color);
-  color: var(--white-color);
-}
 .btn--dark {
   background-color: var(--primary-color);
   color: var(--white-color);
 }
+.btn--dark:focus-visible {
+  outline: none;
+  background-color: var(--primary-color);
+}
 .btn--dark:hover:not(:focus-visible) {
-  background-color: #0e6492;
+  background-color: var(--primary-color);
 }
 .btn--dark:active:not(:focus-visible) {
   background-color: #074464;
-}
-.btn--dark:focus-visible {
-  outline: none;
-  background-color: #0e6492;
 }
 
 .burger {
@@ -215,7 +218,6 @@ img {
   color: #c7e5f7;
 }
 .link--light:focus-visible {
-  outline: none;
   background-color: rgb(255, 194, 27);
 }
 
@@ -530,7 +532,7 @@ img {
   overflow-y: auto;
   background-color: var(--white-color);
   transform: translateY(-1850px);
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.3s ease;
   color: black;
 }
 .drop-nav__list {
@@ -598,13 +600,23 @@ img {
 
 .card {
   height: 100%;
-  display: block;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--light-color);
   border-radius: var(--border-radius);
   padding: 25px;
   background-color: var(--white-color);
+}
+.card:focus-visible {
+  outline: none;
+}
+.card:focus-visible .card__btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.card:hover .card__btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 .card__title {
   border-bottom: 1px solid var(--light-color);
@@ -802,12 +814,18 @@ img {
   filter: grayscale(100%);
   transition: filter 0.3s ease-in-out;
 }
-.partners__img:hover {
+.partners__link {
+  outline: none;
+}
+.partners__link:focus-visible img {
+  filter: grayscale(0);
+}
+.partners__link:hover img {
   filter: grayscale(0);
 }
 
 .table-wrapper {
-  overflow: hidden;
+  overflow-x: auto;
   border-radius: var(--border-radius);
 }
 
