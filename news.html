@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
+  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Воронежская областная офтальмологическая больница</title>
@@ -13,9 +13,9 @@
   <script defer src="./js/main.js"></script>
 </head>
 
-<body>
-
-  <header class="header">
+  <body>
+    <!-- header -->
+    <header class="header">
 
   <div class="header__header-top header-top">
     <div class="header__container container">
@@ -144,119 +144,127 @@
 
 </header>
 
+    <!-- /header -->
 
-  <main class="main">
+    <main class="main">
+      <!-- page-news -->
+      <section class="section page-news">
+        <div class="container page-news__container">
+          <h2 class="section__title page-news__title">Новости</h2>
 
-    <div class="section vacancies">
-      <div class="container vacancies__container">
+          <article class="page-news__article article">
+            <a class="article__link" href="#">
+              <img class="article__img" src="./images/news-stub.jpg" alt="">
+            </a>
+            <div class="article__body">
 
-        <h1 class="vacancies__title">Вакансии</h1>
+              <div class="article__top">
+                <h3 class="article__title">
+                  Будьте осторожны на новогодние праздники!
+                </h3>
+                <time class="article__date" datetime="1963-11-22">
+                  <span>22.11</span>
+                  <span>1963</span>
+                </time>
+              </div>
 
-        <div class="table-wrapper">
-          <table cellspacing="0" cellpadding="0">
-            <thead>
-              <tr>
-                <th>№</th>
-                <th>Должность</th>
-                <th>Учреждение</th>
-                <th>Требования к кандидату</th>
-                <th>Оклад</th>
-                <th>Контактный телефон</th>
-                <th>Примечания</th>
-              </tr>
-            </thead>
-            
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Врач-офтальмолог</td>
-                <td>БУЗ ВО "ВОКОБ"</td>
-                <td>Наличие диплома,сертификата</td>
-                <td>от 40.000 руб.</td>
-                <td>+7(911)799-89-72</td>
-                <td>Пятидневная рабочая неделя</td>
-              </tr>
-  
-              <tr>
-                <td>2</td>
-                <td>Врач-офтальмолог</td>
-                <td>БУЗ ВО "ВОКОБ"</td>
-                <td>Наличие диплома,сертификата</td>
-                <td>от 40.000 руб.</td>
-                <td>+7(911)799-89-72</td>
-                <td>Пятидневная рабочая неделя</td>
-              </tr>
-  
-              <tr>
-                <td>3</td>
-                <td>Врач-офтальмолог</td>
-                <td>БУЗ ВО "ВОКОБ"</td>
-                <td>Наличие диплома,сертификата</td>
-                <td>от 40.000 руб.</td>
-                <td>+7(911)799-89-72</td>
-                <td>Пятидневная рабочая неделя</td>
-              </tr>
-  
-              <tr>
-                <td>4</td>
-                <td>Врач-офтальмолог</td>
-                <td>БУЗ ВО "ВОКОБ"</td>
-                <td>Наличие диплома,сертификата</td>
-                <td>от 40.000 руб.</td>
-                <td>+7(911)799-89-72</td>
-                <td>Пятидневная рабочая неделя</td>
-              </tr>
-  
-              <tr>
-                <td>5</td>
-                <td>Врач-офтальмолог</td>
-                <td>БУЗ ВО "ВОКОБ"</td>
-                <td>Наличие диплома,сертификата</td>
-                <td>от 40.000 руб.</td>
-                <td>+7(911)799-89-72</td>
-                <td>Пятидневная рабочая неделя</td>
-              </tr>
-  
-              <tr>
-                <td>6</td>
-                <td>Врач-офтальмолог</td>
-                <td>БУЗ ВО "ВОКОБ"</td>
-                <td>Наличие диплома,сертификата</td>
-                <td>от 40.000 руб.</td>
-                <td>+7(911)799-89-72</td>
-                <td>Пятидневная рабочая неделя</td>
-              </tr>
-  
-              <tr>
-                <td>7</td>
-                <td>Врач-офтальмолог</td>
-                <td>БУЗ ВО "ВОКОБ"</td>
-                <td>Наличие диплома,сертификата</td>
-                <td>от 40.000 руб.</td>
-                <td>+7(911)799-89-72</td>
-                <td>Пятидневная рабочая неделя</td>
-              </tr>
-  
-              <tr>
-                <td>8</td>
-                <td>Врач-офтальмолог</td>
-                <td>БУЗ ВО "ВОКОБ"</td>
-                <td>Наличие диплома,сертификата</td>
-                <td>от 40.000 руб.</td>
-                <td>+7(911)799-89-72</td>
-                <td>Пятидневная рабочая неделя</td>
-              </tr>
-            </tbody>
-          </table>
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem aliquid eum non adipisci doloribus? Amet delectus
+                sit pariatur architecto, cumque earum qui eaque distinctio non
+                dicta laboriosam adipisci quo quibusdam quis fugiat deserunt.
+                Non similique tempora impedit suscipit id facere doloribus
+                deserunt veritatis aliquam dolorum, molestias quibusdam quod
+                placeat minus atque! Delectus accusantium, reiciendis, labore
+                praesentium eaque magni, iste pariatur eos doloremque ipsa
+                perferendis. Quasi enim deleniti veritatis molestiae vitae
+                corrupti debitis voluptate fuga illum at eaque expedita soluta
+                facere pariatur ratione commodi consectetur iste, voluptatem
+                mollitia reprehenderit. Error dolore tempore nulla ratione
+                accusantium quidem quos fuga id delectus consequatur!
+              </p>
+              <a class="btn btn-reset article__btn" href="#">Читать далее</a>
+            </div>
+          </article>
+
+          <article class="page-news__article article">
+            <a class="article__link" href="#">
+              <img class="article__img" src="./images/news-stub.jpg" alt="">
+            </a>
+            <div class="article__body">
+
+              <div class="article__top">
+                <h3 class="article__title">
+                  Будьте осторожны на новогодние праздники!
+                </h3>
+                <time class="article__date" datetime="1963-11-22">
+                  <span>22.11</span>
+                  <span>1963</span>
+                </time>
+              </div>
+
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem aliquid eum non adipisci doloribus? Amet delectus
+                sit pariatur architecto, cumque earum qui eaque distinctio non
+                dicta laboriosam adipisci quo quibusdam quis fugiat deserunt.
+                Non similique tempora impedit suscipit id facere doloribus
+                deserunt veritatis aliquam dolorum, molestias quibusdam quod
+                placeat minus atque! Delectus accusantium, reiciendis, labore
+                praesentium eaque magni, iste pariatur eos doloremque ipsa
+                perferendis. Quasi enim deleniti veritatis molestiae vitae
+                corrupti debitis voluptate fuga illum at eaque expedita soluta
+                facere pariatur ratione commodi consectetur iste, voluptatem
+                mollitia reprehenderit. Error dolore tempore nulla ratione
+                accusantium quidem quos fuga id delectus consequatur!
+              </p>
+              <a class="btn btn-reset article__btn" href="#">Читать далее</a>
+            </div>
+          </article>
+
+
+          <article class="page-news__article article">
+            <a class="article__link" href="#">
+              <img class="article__img" src="./images/news-stub.jpg" alt="">
+            </a>
+            <div class="article__body">
+
+              <div class="article__top">
+                <h3 class="article__title">
+                  Будьте осторожны на новогодние праздники!
+                </h3>
+                <time class="article__date" datetime="1963-11-22">
+                  <span>22.11</span>
+                  <span>1963</span>
+                </time>
+              </div>
+
+              <p class="article__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem aliquid eum non adipisci doloribus? Amet delectus
+                sit pariatur architecto, cumque earum qui eaque distinctio non
+                dicta laboriosam adipisci quo quibusdam quis fugiat deserunt.
+                Non similique tempora impedit suscipit id facere doloribus
+                deserunt veritatis aliquam dolorum, molestias quibusdam quod
+                placeat minus atque! Delectus accusantium, reiciendis, labore
+                praesentium eaque magni, iste pariatur eos doloremque ipsa
+                perferendis. Quasi enim deleniti veritatis molestiae vitae
+                corrupti debitis voluptate fuga illum at eaque expedita soluta
+                facere pariatur ratione commodi consectetur iste, voluptatem
+                mollitia reprehenderit. Error dolore tempore nulla ratione
+                accusantium quidem quos fuga id delectus consequatur!
+              </p>
+              <a class="btn btn-reset article__btn" href="#">Читать далее</a>
+            </div>
+          </article>
+
+
         </div>
+      </section>
+      <!-- /hero -->
+    </main>
 
-
-      </div>
-    </div>
-
-  </main>
-
-  <!-- footer -->
+    <!-- footer -->
 <footer class="footer">
   <div class="container footer__container">
     <div class="footer__top">
@@ -366,6 +374,5 @@
 </footer>
 <!-- /footer -->
 
-</body>
-
+  </body>
 </html>
