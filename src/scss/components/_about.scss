@@ -1,0 +1,28 @@
+/* about */
+.about {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  &__picture {
+    border: 1px solid var(--light-color);
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: "Exo2", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: var(--gray-color);
+    font-size: 14px;
+  }
+}

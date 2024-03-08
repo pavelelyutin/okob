@@ -1,0 +1,26 @@
+// Глобальные стили
+@import "fonts";
+@import "vars";
+@import "settings";
+
+// header
+@import "../scss/components/header";
+
+// index
+@import "../scss/components/hero";
+@import "../scss/components/services";
+@import "../scss/components/news";
+@import "../scss/components/questions";
+@import "../scss/components/about";
+@import "../scss/components/partners";
+
+// страницы
+@import "../scss/pages/vacancies.scss";
+@import "../scss/pages/news.scss";
+@import "../scss/pages/news-single/news-single.scss";
+
+//footer
+@import "../scss/components/footer";
+
+// Медиа запросы
+@import "media";

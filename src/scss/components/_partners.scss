@@ -1,0 +1,27 @@
+.partners {
+  &__container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    width: 150px;
+    filter: grayscale(100%);
+    transition: filter .3s ease-in-out;
+  }
+
+  &__link {
+    outline: none;
+    
+    &:focus-visible img {
+      filter: grayscale(0);
+    }
+
+    &:hover img {
+      filter: grayscale(0);
+    }
+  }
+}
