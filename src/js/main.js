@@ -2,11 +2,11 @@ const burger = document.querySelector(".burger");
 const dropNav = document.querySelector(".drop");
 
 // Открытие и закрытие бургер-меню
-burger.addEventListener("click", function () {
-  burger.classList.toggle("burger-active");
-  dropNav.classList.toggle("drop-nav-active");
-  document.body.classList.toggle("body-hidden")
-});
+// burger.addEventListener("click", function () {
+//   burger.classList.toggle("burger-active");
+//   dropNav.classList.toggle("drop-nav-active");
+//   document.body.classList.toggle("body-hidden")
+// });
 
 // Аккордион в секции с популярными вопросами
 let accordionBtn = document.getElementsByClassName("accordion__button");
@@ -31,7 +31,7 @@ const swiperHero = new Swiper(".hero", {
   },
 });
 
-// Слайдер в блоке hero (библиотека swiper)
+// Слайдер в блоке news (библиотека swiper)
 const swiperNews = new Swiper(".news__swiper", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -53,18 +53,19 @@ const swiperNews = new Swiper(".news__swiper", {
       spaceBetween: 30
     }
   },
+
+  navigation: {
+    nextEl: '.slider-right',
+    prevEl: '.slider-left',
+  },
 });
 
 // фиксирование меню при прокрутке стриницы
-// window.addEventListener('scroll', function () {
-//   let scrollWindow = window.scrollY;
-//   let scrollHeaderBottom = document.querySelector('.header-top').scrollHeight;
-
-//   if (scrollWindow > scrollHeaderBottom) {
-//       this.document.querySelector('.header-bottom').classList.add('fixed');
-
-//   } else {
-//       this.document.querySelector('.header-bottom').classList.remove('fixed');
-
-//   }
-// });
+const header = document.querySelector('.header');
+document.addEventListener('scroll', function() {
+  if (window.scrollY >= 80) {
+    header.classList.add('header--fixed');
+  } else {
+    header.classList.remove('header--fixed');
+  }
+})

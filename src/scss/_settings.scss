@@ -15,8 +15,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  // background-color: #fdfdfd;
-  background-color: #fcfcfc;
 }
 
 a {
@@ -24,28 +22,37 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 img {
   max-width: 100%;
 }
 
+// Контейнер для сайта
 .container {
-  max-width: 1350px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
+// Отмена прокрутки страницы
+.body-hidden {
+  overflow: hidden;
+}
+
+// Скрытие элемента
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+// Сброс стилей кнопки
 .btn-reset {
   background-color: transparent;
   border: 0;
@@ -53,30 +60,27 @@ img {
   cursor: pointer;
 }
 
+// Сброс стилей списка
 .list-reset {
   list-style: none;
   padding: 0;
 }
 
-.body-hidden {
-  overflow: hidden;
-}
-
-// button
+// Кнопка
 .btn {
   display: block;
-  min-height: 44px;
-  min-width: 210px;
+  // min-height: 40px;
+  min-width: 200px;
   border: 1px solid var(--primary-color);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-large);
   padding: 12px 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
   text-align: center;
   background-color: var(--white-color);
-  transition: background-color 0.2s ease-in-out, color .2s ease-in-out;
-  
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
   &:focus-visible {
     outline: 1px solid var(--primary-color);
     outline-offset: 2px;
@@ -115,7 +119,7 @@ img {
   }
 }
 
-// burger menu
+// Бургер-меню
 .burger {
   position: relative;
   height: 40px;
@@ -128,7 +132,11 @@ img {
     height: 4px;
     border-radius: 30px;
     background-color: var(--primary-color);
-    transition: transform .2s ease-in-out, top .2s ease, bottom .2s ease, opacity .2s ease;
+    transition:
+      transform 0.2s ease-in-out,
+      top 0.2s ease,
+      bottom 0.2s ease,
+      opacity 0.2s ease;
 
     &:first-child {
       top: 20%;
@@ -147,28 +155,26 @@ img {
 }
 
 .burger-active .burger {
-    &__line {
-      &:first-child {
-        top: 50%;
-        transform: rotate(45deg) translate(-5%,-50%);
-      }
-      
-      &:nth-child(2) {
-        transform: rotate(45deg);
-        opacity: 0;
-      }
-
-      &:last-child {
-        top: 50%;
-        transform: rotate(-45deg) translate(5%,-50%);
-      }
+  &__line {
+    &:first-child {
+      top: 50%;
+      transform: rotate(45deg) translate(-5%, -50%);
     }
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+      opacity: 0;
+    }
+
+    &:last-child {
+      top: 50%;
+      transform: rotate(-45deg) translate(5%, -50%);
+    }
+  }
 }
 
 .link {
-  transition:
-    color 0.3s ease,
-    background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
 
   &:hover:not(:focus-visible) {
     color: var(--primary-color);
@@ -214,10 +220,11 @@ img {
   }
 
   &__title {
-    color: var(--black-color);
-    font-family: "Exo2", sans-serif;
+    margin: 0;
+    font-family: "Jost", sans-serif;
     font-size: 48px;
     font-weight: 700;
+    color: var(--black-color);
   }
 }
 
@@ -374,8 +381,4 @@ img {
       text-decoration: underline;
     }
   }
-}
-
-.body-hidden {
-  overflow: hidden;
 }

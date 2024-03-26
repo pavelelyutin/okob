@@ -61,29 +61,12 @@
   align-items: center;
   border-radius: 0 0 10px 10px;
   padding: 10px;
-  // opacity: 0.5;
   background-color: var(--white-color);
   color: var(--black-color) ;
   font-weight: 600;
-  // display: flex;
-  // align-items: center;
-  // gap: 5px;
-  // max-width: 120px;
-  // margin-bottom: 20px;
-  // font-family: "Exo2", sans-serif;
-  // font-weight: 700;
-  // line-height: 100%;
-  // letter-spacing: -0.66px;
+}
 
-  // &__day {
-  //   color: var(--black-color);
-  //   font-size: 40px;
-  // }
-
-  // &__month-year {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-  //   line-height: 130%;
-  // }
+.slider-navigation {
+  display: flex;
+  gap: 20px;
 }

@@ -1,48 +1,46 @@
 /* hero */
 .hero {
-    overflow: hidden;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--primary-color);
+
+  &__container {
     position: relative;
-    background-color: var(--primary-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    &__container {
-        position: relative;
-        padding-top: 50px;
-        padding-bottom: 50px;
+    background-image: url("../images/doc.svg");
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+    background-size: 260px;
+  }
 
-        background-image: url("../images/doc.svg");
-        background-repeat: no-repeat;
-        background-position: center right 30px;
-        background-size: 280px;
-    }
+  &__motto {
+    display: inline-block;
+    max-width: 1100px;
+    margin-bottom: 40px;
+    font-size: 80px;
+    line-height: 100%;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white-color);
+  }
 
-    &__title {
-        max-width: 1100px;
-        margin-bottom: 40px;
-        font-family: "Exo2", sans-serif;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: var(--white-color);
-    }
+  &__name {
+    position: absolute;
+    top: 86px;
+    left: 650px;
+    max-width: 450px;
+    font-size: 24px;
+    line-height: 100%;
+  }
 
-    &__motto {
-        font-size: 96px;
-        line-height: 100%;
-    }
-
-    &__name {
-        position: absolute;
-        top: 86px;
-        left: 650px;
-        max-width: 450px;
-        font-size: 24px;
-        line-height: 100%;
-    }
-
-    // &__btn:hover:not(:focus-visible) {
-    //     border-color: var(--white-color);
-    // }
+  // &__btn:hover:not(:focus-visible) {
+  //     border-color: var(--white-color);
+  // }
 }
 
 .swiper-slide {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }

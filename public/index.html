@@ -16,74 +16,85 @@
 <body>
   <header class="header">
 
-  <div class="header__header-top header-top">
-    <div class="header__container container">
+  <!-- Врехняя часть шапки -->
+  <div class="header__info">
+    <div class="container header__container">
 
-      <div class="header-top__left">
-        <a class="logo header__logo" href="/">
-          <img src="./images/logo.svg" alt="Логотип больницы"/>
+      <div class="header__left">
+        <a class="header__logo logo" href="/">
+          <img src="./images/logo.svg" width="90" height="48"
+            alt="Логотип воронежской областной клинической офтальмологической больницы">
+          <span class="header__name">
+            Воронежская областная&nbsp;клиническая офтальмологическая больница
+          </span>
         </a>
-        <div class="header__name">
-          Воронежская <br />областная клиническая офтальмологическая больница
-        </div>
       </div>
 
-      <div class="header-top__center">
-        <div class="info header__info header__info--phone">
-          <a class="info__link link" href="tel:+79999999999">+7 (473) 252 94 46</a>
-          <span class="info__subtitle">Call-центр</span>
+      <div class="header__center">
+
+        <div class="info-contact info-contact--phone">
+          <a class="info-contact__link link" href="tel:+79999999999">+7 (473) 252 94 46</a>
+          <span class="info-contact__subtitle">Call-центр</span>
         </div>
-        <div class="info header__info header__info--location">
-          <a class="info__link link" href="#">Революции 1905 г., 22</a>
-          <span class="info__subtitle">Пн - Сб, 08:00 - 20:00</span>
+
+        <div class="info-contact info-contact--location">
+          <a class="info-contact__link link" href="#">Революции 1905 г., 22</a>
+          <span class="info-contact__subtitle">Пн - Сб, 08:00 - 20:00</span>
         </div>
+
       </div>
 
-      <div class="header-top__right">
+      <div class="header__right">
 
-        <div class="header-mobile">
-          <button class="header-mobile__search btn-reset">
-            <img src="./images/icon-search.svg" alt="">
-          </button>
+        <!-- <div class="header-mobile">
+            <button class="header-mobile__search btn-reset">
+              <img src="./images/icon-search.svg" alt="">
+            </button>
+  
+            <button class="header-mobile__login btn-reset">
+              <img src="./images/icon-login.svg" alt="">
+            </button>
+  
+            <button class="burger btn-reset">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+          </div> -->
 
-          <button class="header-mobile__login btn-reset">
-            <img src="./images/icon-login.svg" alt="">
-          </button>
-
-          <button class="burger btn-reset">
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-            <span class="burger__line"></span>
-          </button>
-        </div>
-
-        <button id="btn-login" class="btn btn-reset btn--login">
-          Личный кабинет
+        <button class="btn btn-reset" aria-label="Записаться на платный прием">
+          Записаться
         </button>
       </div>
 
     </div>
+
   </div>
 
-  <div class="header__header-bottom header-bottom">
+
+  <div class="header__menu">
     <div class="container">
-      <nav class="nav header__nav">
+
+      <nav class="header__nav nav">
+
         <div class="nav__left">
           <ul class="nav__list list-reset">
+
             <li class="nav__item">
-              <a class="nav__link link" href="#">О больнице</a>
+              <a class="nav__link nav__link--drop link" href="#">О нас</a>
+
               <ul class="nav__dropdown dropdown list-reset">
                 <li class="dropdown__item">
-                  <a class="dropdown__link link" href="">О нас</a>
+                  <a class="dropdown__link link" href="">О больнице</a>
                 </li>
                 <li class="dropdown__item">
-                  <a class="dropdown__link link" href="">Отделения</a>
+                  <a class="dropdown__link link" href="">Наша история</a>
                 </li>
                 <li class="dropdown__item">
-                  <a class="dropdown__link link" href="">История</a>
+                  <a class="dropdown__link link" href="">Администрация</a>
                 </li>
                 <li class="dropdown__item">
-                  <a class="dropdown__link link" href="">Пациенту</a>
+                  <a class="dropdown__link link" href="">Доктора</a>
                 </li>
                 <li class="dropdown__item">
                   <a class="dropdown__link link" href="">Документы</a>
@@ -91,41 +102,49 @@
                 <li class="dropdown__item">
                   <a class="dropdown__link link" href="./vacancies.html">Вакансии</a>
                 </li>
+                <li class="dropdown__item">
+                  <a class="dropdown__link link" href="">Партнеры</a>
+                </li>
               </ul>
             </li>
+
             <li class="nav__item">
-              <a class="nav__link link" href="#">Контакты</a>
+              <a class="nav__link link" href="#">Отделения</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Врачи</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Услуги</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link link" href="#">Цены</a>
-            </li>
+
             <li class="nav__item">
               <a class="nav__link link" href="./news.html">Новости</a>
             </li>
+
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Пациентам</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Контакты</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link link" href="#">Еще</a>
+            </li>
+
           </ul>
-          <div class="header-bottom__searh-container">
-            <form action="">
-              <input class="header-bottom__search" type="text" placeholder="Поиск"/>
-            </form>
-          </div>
+
+          <input class="nav__search" type="text" name="search" placeholder="Поиск">
+
         </div>
 
         <div class="nav__right">
           <button class="header-bottom__btn btn btn-reset">
-            Записаться на прием
+            Задать вопрос
           </button>
         </div>
       </nav>
+
     </div>
   </div>
 
-  <div class="header__drop drop">
+  <!-- <div class="header__drop drop">
     <nav class="drop-nav">
       <div class="container drop__container">
         <ul class="drop-nav__list list-reset" inert>
@@ -138,11 +157,9 @@
         </ul>
       </div>
     </nav>
-  
-  </div>
+  </div> -->
 
 </header>
-
   <main>
 
     <!-- <section class="section hero">
@@ -155,31 +172,28 @@
 </section> -->
 
 <section class="hero">
+  <h1 class="hero__title visually-hidden">
+    Воронежская областная клиническая офтальмологическая больница
+  </h1>
   <div class="swiper-wrapper">
 
     <div class="hero__slide swiper-slide">
       <div class="container hero__container">
-        <h1 class="hero__title">
-          <span class="hero__motto">Охраняем зрение более 100 лет</span>
-        </h1>
+        <span class="hero__motto">Охраняем зрение более 100 лет</span>
         <button class="btn btn-reset hero__btn">Задать вопрос</button>
       </div>
     </div>
 
     <div class="hero__slide swiper-slide">
       <div class="container hero__container">
-        <h1 class="hero__title">
-          <span class="hero__motto">Новое современное оборудование</span>
-        </h1>
+        <span class="hero__motto">Новое современное оборудование</span>
         <button class="btn btn-reset hero__btn">Подробнее</button>
       </div>
     </div>
 
     <div class="hero__slide swiper-slide">
       <div class="container hero__container">
-        <h1 class="hero__title">
-          <span class="hero__motto">Лучшие врачи-офтальмологи</span>
-        </h1>
+        <span class="hero__motto">Лучшие врачи-офтальмологи</span>
         <button class="btn btn-reset hero__btn">Подробнее</button>
       </div>
     </div>
@@ -291,6 +305,23 @@
 
     <div class="section__top">
       <h2 class="section__title">Новости</h2>
+
+      <div class="slider-navigation">
+        <button class="btn-reset slider-left">
+          <svg width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="14.5" transform="rotate(180 15 15)" stroke="#147FB9" />
+            <path d="M17.5748 7.77498C17.7332 7.77498 17.8915 7.83332 18.0165 7.95832C18.2582 8.19998 18.2582 8.59998 18.0165 8.84165L12.5832 14.275C12.1832 14.675 12.1832 15.325 12.5832 15.725L18.0165 21.1583C18.2582 21.4 18.2582 21.8 18.0165 22.0417C17.7748 22.2833 17.3748 22.2833 17.1332 22.0417L11.6998 16.6083C11.2748 16.1833 11.0332 15.6083 11.0332 15C11.0332 14.3917 11.2665 13.8166 11.6998 13.3916L17.1332 7.95832C17.2582 7.84165 17.4165 7.77498 17.5748 7.77498Z" fill="#147FB9" />
+          </svg>
+        </button>
+  
+        <button class="btn-reset slider-right">
+          <svg width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="15" r="14.5" stroke="#147FB9" />
+            <path d="M12.4252 22.225C12.2668 22.225 12.1085 22.1667 11.9835 22.0417C11.7418 21.8 11.7418 21.4 11.9835 21.1583L17.4168 15.725C17.8168 15.325 17.8168 14.675 17.4168 14.275L11.9835 8.84168C11.7418 8.60002 11.7418 8.20002 11.9835 7.95835C12.2252 7.71668 12.6252 7.71668 12.8668 7.95835L18.3002 13.3917C18.7252 13.8167 18.9668 14.3917 18.9668 15C18.9668 15.6084 18.7335 16.1834 18.3002 16.6084L12.8668 22.0417C12.7418 22.1584 12.5835 22.225 12.4252 22.225Z" fill="#147FB9" />
+          </svg>
+        </button>
+      </div>
+
       <button class="btn btn-reset">Все новости</button>
     </div>
 
