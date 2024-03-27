@@ -378,8 +378,11 @@ img {
   background-color: var(--white-color);
 }
 .header__info {
+  position: relative;
+  z-index: 1000;
   padding-top: 15px;
   padding-bottom: 15px;
+  background-color: var(--white-color);
 }
 .header__menu {
   border-top: 1px solid var(--light-color);

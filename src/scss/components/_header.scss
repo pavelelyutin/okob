@@ -5,8 +5,11 @@
   background-color: var(--white-color);
 
   &__info {
+    position: relative;
+    z-index: 1000;
     padding-top: 15px;
     padding-bottom: 15px;
+    background-color: var(--white-color);
   }
 
   &__menu {
