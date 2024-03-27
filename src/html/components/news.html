@@ -5,14 +5,14 @@
       <h2 class="section__title">Новости</h2>
 
       <div class="slider-navigation">
-        <button class="btn-reset slider-left">
+        <button class="btn-reset slider-left" aria-label="Пролистать к предыдущей новости">
           <svg width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="15" cy="15" r="14.5" transform="rotate(180 15 15)" stroke="#147FB9" />
             <path d="M17.5748 7.77498C17.7332 7.77498 17.8915 7.83332 18.0165 7.95832C18.2582 8.19998 18.2582 8.59998 18.0165 8.84165L12.5832 14.275C12.1832 14.675 12.1832 15.325 12.5832 15.725L18.0165 21.1583C18.2582 21.4 18.2582 21.8 18.0165 22.0417C17.7748 22.2833 17.3748 22.2833 17.1332 22.0417L11.6998 16.6083C11.2748 16.1833 11.0332 15.6083 11.0332 15C11.0332 14.3917 11.2665 13.8166 11.6998 13.3916L17.1332 7.95832C17.2582 7.84165 17.4165 7.77498 17.5748 7.77498Z" fill="#147FB9" />
           </svg>
         </button>
   
-        <button class="btn-reset slider-right">
+        <button class="btn-reset slider-right" aria-label="Пролистать к следующей новости">
           <svg width="40" height="40" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="15" cy="15" r="14.5" stroke="#147FB9" />
             <path d="M12.4252 22.225C12.2668 22.225 12.1085 22.1667 11.9835 22.0417C11.7418 21.8 11.7418 21.4 11.9835 21.1583L17.4168 15.725C17.8168 15.325 17.8168 14.675 17.4168 14.275L11.9835 8.84168C11.7418 8.60002 11.7418 8.20002 11.9835 7.95835C12.2252 7.71668 12.6252 7.71668 12.8668 7.95835L18.3002 13.3917C18.7252 13.8167 18.9668 14.3917 18.9668 15C18.9668 15.6084 18.7335 16.1834 18.3002 16.6084L12.8668 22.0417C12.7418 22.1584 12.5835 22.225 12.4252 22.225Z" fill="#147FB9" />
@@ -20,99 +20,132 @@
         </button>
       </div>
 
-      <button class="btn btn-reset">Все новости</button>
+      <button class="btn btn-reset" aria-label="Открыть все новости">Все новости</button>
     </div>
 
-    <div class="news__swiper">
+    <div class="news__swiper swiper">
       <ul class="news__list list-reset swiper-wrapper">
+
         <li class="news__item swiper-slide">
-          <img class="news__img" src="./images/news-stub.jpg" alt="">
-          <div class="news__date date">
-            <span class="date__day">20.03</span>
-            <span class="date__year">2024</span>
-          </div>
-          <div class="news__text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis blanditiis dolorum dolor tenetur quae
-              velit! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Odit hic ducimus enim quas deserunt cum blanditiis facilis ipsam voluptatem rerum at.</p>
-          </div>
-          <button class="btn btn-reset news__btn">Читать далее</button>
+          <article class="news__article news-article">
+
+            <img class="news-article__img" src="./images/news-stub.jpg" alt="">
+
+            <div class="news-article__date">
+              <span class="news-article__day">20.03</span>
+              <span class="news-article__year">2024</span>
+            </div>
+
+            <h3 class="news-article__title">Новогодний концерт в ВОКОБ</h3>
+
+            <p class="news-article__text">
+              А вот такие новогодние концерты, уже традиционно, проходят у нас в ВОКОБ для детей и внуков сотрудников.
+            </p>
+
+            <button class="news-article__btn btn btn-reset" aria-label="Читать новость подробнее">Читать далее</button>
+          </article>
         </li>
 
         <li class="news__item swiper-slide">
-          <img class="news__img" src="./images/news-stub.jpg" alt="">
-          <div class="news__date date">
-            <span class="date__day">20.03</span>
-            <span class="date__year">2024</span>
-          </div>
+          <article class="news__article news-article">
 
-          <div class="news__text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis blanditiis dolorum dolor tenetur quae
-              velit!</p>
-          </div>
+            <img class="news-article__img" src="./images/news-stub.jpg" alt="">
 
-          <button class="btn btn-reset news__btn">Читать далее</button>
+            <div class="news-article__date">
+              <span class="news-article__day">20.03</span>
+              <span class="news-article__year">2024</span>
+            </div>
+
+            <h3 class="news-article__title">Новогодний концерт в ВОКОБ</h3>
+
+            <p class="news-article__text">
+              А вот такие новогодние концерты, уже традиционно, проходят у нас в ВОКОБ для детей и внуков сотрудников.
+            </p>
+
+            <button class="news-article__btn btn btn-reset" aria-label="Читать новость подробнее">Читать далее</button>
+          </article>
         </li>
 
         <li class="news__item swiper-slide">
-          <img class="news__img" src="./images/news-stub.jpg" alt="">
-          <div class="news__date date">
-            <span class="date__day">20.03</span>
-            <span class="date__year">2024</span>
-          </div>
+          <article class="news__article news-article">
 
-          <div class="news__text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis blanditiis dolorum dolor tenetur quae
-              velit!</p>
-          </div>
+            <img class="news-article__img" src="./images/news-stub.jpg" alt="">
 
-          <button class="btn btn-reset news__btn">Читать далее</button>
+            <div class="news-article__date">
+              <span class="news-article__day">20.03</span>
+              <span class="news-article__year">2024</span>
+            </div>
+
+            <h3 class="news-article__title">Новогодний концерт в ВОКОБ</h3>
+
+            <p class="news-article__text">
+              А вот такие новогодние концерты, уже традиционно, проходят у нас в ВОКОБ для детей и внуков сотрудников.
+            </p>
+
+            <button class="news-article__btn btn btn-reset" aria-label="Читать новость подробнее">Читать далее</button>
+          </article>
         </li>
 
         <li class="news__item swiper-slide">
-          <img class="news__img" src="./images/news-stub.jpg" alt="">
-          <div class="news__date date">
-            <span class="date__day">20.03</span>
-            <span class="date__year">2024</span>
-          </div>
+          <article class="news__article news-article">
 
-          <div class="news__text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis blanditiis dolorum dolor tenetur quae
-              velit!</p>
-          </div>
+            <img class="news-article__img" src="./images/news-stub.jpg" alt="">
 
-          <button class="btn btn-reset news__btn">Читать далее</button>
+            <div class="news-article__date">
+              <span class="news-article__day">20.03</span>
+              <span class="news-article__year">2024</span>
+            </div>
+
+            <h3 class="news-article__title">Новогодний концерт в ВОКОБ</h3>
+
+            <p class="news-article__text">
+              А вот такие новогодние концерты, уже традиционно, проходят у нас в ВОКОБ для детей и внуков сотрудников.
+            </p>
+
+            <button class="news-article__btn btn btn-reset" aria-label="Читать новость подробнее">Читать далее</button>
+          </article>
         </li>
 
         <li class="news__item swiper-slide">
-          <img class="news__img" src="./images/news-stub.jpg" alt="">
-          <div class="news__date date">
-            <span class="date__day">20.03</span>
-            <span class="date__year">2024</span>
-          </div>
+          <article class="news__article news-article">
 
-          <div class="news__text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis blanditiis dolorum dolor tenetur quae
-              velit!</p>
-          </div>
+            <img class="news-article__img" src="./images/news-stub.jpg" alt="">
 
-          <button class="btn btn-reset news__btn">Читать далее</button>
+            <div class="news-article__date">
+              <span class="news-article__day">20.03</span>
+              <span class="news-article__year">2024</span>
+            </div>
+
+            <h3 class="news-article__title">Новогодний концерт в ВОКОБ</h3>
+
+            <p class="news-article__text">
+              А вот такие новогодние концерты, уже традиционно, проходят у нас в ВОКОБ для детей и внуков сотрудников.
+            </p>
+
+            <button class="news-article__btn btn btn-reset" aria-label="Читать новость подробнее">Читать далее</button>
+          </article>
         </li>
 
         <li class="news__item swiper-slide">
-          <img class="news__img" src="./images/news-stub.jpg" alt="">
-          <div class="news__date date">
-            <span class="date__day">20.03</span>
-            <span class="date__year">2024</span>
-          </div>
+          <article class="news__article news-article">
 
-          <div class="news__text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis blanditiis dolorum dolor tenetur quae
-              velit!</p>
-          </div>
+            <img class="news-article__img" src="./images/news-stub.jpg" alt="">
 
-          <button class="btn btn-reset news__btn">Читать далее</button>
+            <div class="news-article__date">
+              <span class="news-article__day">20.03</span>
+              <span class="news-article__year">2024</span>
+            </div>
+
+            <h3 class="news-article__title">Новогодний концерт в ВОКОБ</h3>
+
+            <p class="news-article__text">
+              А вот такие новогодние концерты, уже традиционно, проходят у нас в ВОКОБ для детей и внуков сотрудников.
+            </p>
+
+            <button class="news-article__btn btn btn-reset" aria-label="Читать новость подробнее">Читать далее</button>
+          </article>
         </li>
+
       </ul>
     </div>
 

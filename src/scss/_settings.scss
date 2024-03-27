@@ -15,6 +15,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  color: var(--black-color);
 }
 
 a {
@@ -62,8 +63,9 @@ img {
 
 // Сброс стилей списка
 .list-reset {
-  list-style: none;
+  margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 // Кнопка
@@ -101,16 +103,19 @@ img {
   }
 
   &--dark {
+    border: 1px solid var(--white-color);
     background-color: var(--primary-color);
     color: var(--white-color);
 
     &:focus-visible {
       outline: none;
-      background-color: var(--primary-color);
+      background-color: var(--white-color);
+      color: var(--black-color);
     }
 
     &:hover:not(:focus-visible) {
-      background-color: var(--primary-color);
+      background-color: var(--white-color);
+      color: var(--black-color);
     }
 
     &:active:not(:focus-visible) {
@@ -214,7 +219,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--light-color);
   }

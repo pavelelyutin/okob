@@ -2,28 +2,30 @@
 .about {
   &__wrapper {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
 
   &__picture {
-    border: 1px solid var(--light-color);
     height: 100%;
-    border-radius: 15px;
+    border: 1px solid var(--light-color);
+    border-radius: var(--border-radius-medium);
     object-fit: cover;
   }
 
   &__title {
+    margin: 0;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-family: "Exo2", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
   }
 
   &__text {
+    margin: 0;
     color: var(--gray-color);
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
   }
 }

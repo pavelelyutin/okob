@@ -3,7 +3,7 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
   }
 }
 
@@ -81,7 +81,9 @@
     background-color: var(--white-color);
 
     p {
+      margin: 0;
       padding: 30px 20px 20px 20px;
+      line-height: 1.3;
     }
   }
 }
