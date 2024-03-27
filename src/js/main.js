@@ -1,12 +1,12 @@
 const burger = document.querySelector(".burger");
-const dropNav = document.querySelector(".drop");
+const dropNav = document.querySelector(".header__drop");
 
 // Открытие и закрытие бургер-меню
-// burger.addEventListener("click", function () {
-//   burger.classList.toggle("burger-active");
-//   dropNav.classList.toggle("drop-nav-active");
-//   document.body.classList.toggle("body-hidden")
-// });
+burger.addEventListener("click", function () {
+  burger.classList.toggle("burger-active");
+  dropNav.classList.toggle("drop-nav-active");
+  document.body.classList.toggle("body-hidden")
+});
 
 // Аккордион в секции с популярными вопросами
 let accordionBtn = document.getElementsByClassName("accordion__button");
@@ -45,7 +45,7 @@ const swiperNews = new Swiper(".news__swiper", {
     1024: {
       slidesPerView: 3,
     },
-    1440: {
+    1280: {
       slidesPerView: 4,
     }
   },

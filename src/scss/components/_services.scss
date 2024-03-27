@@ -1,4 +1,4 @@
-/* services */
+// services
 .services {
   &__list {
     display: grid;
@@ -7,6 +7,7 @@
   }
 }
 
+// Бейдж (карточка) отделения
 .department {
   position: relative;
   display: flex;
@@ -70,5 +71,13 @@
       }
     }
     
+  }
+}
+
+@media (max-width: 1280px) {
+  .services {
+    &__list {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }

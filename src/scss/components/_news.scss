@@ -48,6 +48,7 @@
   &__title {
     margin: 0;
     margin-bottom: 10px;
+    font-family: 'Jost', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
   }
@@ -63,9 +64,9 @@
     margin-bottom: 10px;
   }
 
-  // &__btn {
-  //   margin-top: auto;
-  // }
+  &__btn {
+    margin-top: auto;
+  }
 }
 
 .slider-navigation {

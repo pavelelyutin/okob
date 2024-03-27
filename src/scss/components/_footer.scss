@@ -16,7 +16,7 @@
   &__center {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
   }
 
   &__bottom {
@@ -75,6 +75,8 @@
 }
 
 .contacts {
+  max-width: 325px;
+
   &__email {
     display: inline-block;
     margin-bottom: 15px;
@@ -88,15 +90,15 @@
   &__phones {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
+    gap: 10px;
   }
 }
 
 .phone {
   &__title {
-    margin-bottom: 2px;
+    display: block;
+    margin-bottom: 3px;
     font-size: 12px;
-    font-weight: 400;
     color: var(--light-color);
   }
 }
